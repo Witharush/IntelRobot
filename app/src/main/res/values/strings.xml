@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IntelRobot</string>
+    <string-array name="welcome">
+        <item>亲爱的， 想死我了， 么么哒，</item>
+        <item>更多帅标信息请访问：biaobiaocool.com</item>
+        <item>帅标，人家好无聊呢， 来陪陪人家呀</item>
+        <item>帅标， 这边请</item>
+        <item>帅标标， 你真是天底下最帅气的男人O(∩_∩)O</item>
+    </string-array>
+</resources>

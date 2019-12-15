@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="#0cc4e5"
+        android:text="Robot"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!--稍后测试android:cacheColorHint="@android:color/black的效果"-->
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/black"
+                android:divider="@null"
+                android:listSelector="@null"
+                android:transcriptMode="alwaysScroll" />
+            <RelativeLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_blue_bright">
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_send_selector"
+                    android:text="Send"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/et_send_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/btn_send"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:inputType="textNoSuggestions"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>
